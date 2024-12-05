@@ -1,0 +1,11 @@
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\bin\Debug\sistema_colegio.exe.config
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\bin\Debug\sistema_colegio.exe
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\bin\Debug\sistema_colegio.pdb
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\bin\Debug\sistema_colegio.xml
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.Resources.resources
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.vbproj.GenerateResource.Cache
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.exe
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.xml
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.pdb
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.login.resources
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.usuariosok.resources
