@@ -31,28 +31,30 @@ Partial Class usuariosok
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.txtBusca = New System.Windows.Forms.TextBox()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lblIdusuario = New System.Windows.Forms.Label()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtLogin = New System.Windows.Forms.TextBox()
+        Me.txtNOMBRE = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.GuardarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GuardarCambiosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -99,7 +101,7 @@ Partial Class usuariosok
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.Controls.Add(Me.MenuStrip2)
-        Me.Panel3.Controls.Add(Me.txtBusca)
+        Me.Panel3.Controls.Add(Me.txtBuscar)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 74)
         Me.Panel3.Name = "Panel3"
@@ -124,13 +126,13 @@ Partial Class usuariosok
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(28, 20)
         '
-        'txtBusca
+        'txtBuscar
         '
-        Me.txtBusca.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.txtBusca.Location = New System.Drawing.Point(365, 17)
-        Me.txtBusca.Name = "txtBusca"
-        Me.txtBusca.Size = New System.Drawing.Size(498, 23)
-        Me.txtBusca.TabIndex = 0
+        Me.txtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.txtBuscar.Location = New System.Drawing.Point(365, 17)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(498, 23)
+        Me.txtBuscar.TabIndex = 0
         '
         'datalistado
         '
@@ -139,49 +141,69 @@ Partial Class usuariosok
         Me.datalistado.AllowUserToResizeRows = False
         Me.datalistado.BackgroundColor = System.Drawing.Color.White
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.datalistado.Location = New System.Drawing.Point(13, 150)
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.datalistado.Location = New System.Drawing.Point(0, 134)
         Me.datalistado.Name = "datalistado"
+        Me.datalistado.RowHeadersVisible = False
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.datalistado.Size = New System.Drawing.Size(882, 328)
+        Me.datalistado.Size = New System.Drawing.Size(968, 371)
         Me.datalistado.TabIndex = 3
+        '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.TextBox3)
-        Me.Panel4.Controls.Add(Me.TextBox2)
-        Me.Panel4.Controls.Add(Me.TextBox1)
+        Me.Panel4.Controls.Add(Me.lblIdusuario)
+        Me.Panel4.Controls.Add(Me.txtPassword)
+        Me.Panel4.Controls.Add(Me.txtLogin)
+        Me.Panel4.Controls.Add(Me.txtNOMBRE)
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label3)
         Me.Panel4.Controls.Add(Me.Label2)
         Me.Panel4.Controls.Add(Me.MenuStrip1)
-        Me.Panel4.Location = New System.Drawing.Point(124, 150)
+        Me.Panel4.Location = New System.Drawing.Point(139, 150)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(771, 328)
         Me.Panel4.TabIndex = 4
         '
-        'TextBox3
+        'lblIdusuario
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(122, 108)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(385, 26)
-        Me.TextBox3.TabIndex = 1
+        Me.lblIdusuario.AutoSize = True
+        Me.lblIdusuario.Location = New System.Drawing.Point(621, 45)
+        Me.lblIdusuario.Name = "lblIdusuario"
+        Me.lblIdusuario.Size = New System.Drawing.Size(39, 13)
+        Me.lblIdusuario.TabIndex = 3
+        Me.lblIdusuario.Text = "Label5"
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(122, 70)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(385, 26)
-        Me.TextBox2.TabIndex = 1
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(122, 108)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(385, 26)
+        Me.txtPassword.TabIndex = 1
         '
-        'TextBox1
+        'txtLogin
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(122, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(385, 26)
-        Me.TextBox1.TabIndex = 1
+        Me.txtLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLogin.Location = New System.Drawing.Point(122, 70)
+        Me.txtLogin.Name = "txtLogin"
+        Me.txtLogin.Size = New System.Drawing.Size(385, 26)
+        Me.txtLogin.TabIndex = 1
+        '
+        'txtNOMBRE
+        '
+        Me.txtNOMBRE.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNOMBRE.Location = New System.Drawing.Point(122, 32)
+        Me.txtNOMBRE.Name = "txtNOMBRE"
+        Me.txtNOMBRE.Size = New System.Drawing.Size(385, 26)
+        Me.txtNOMBRE.TabIndex = 1
         '
         'Label4
         '
@@ -213,6 +235,33 @@ Partial Class usuariosok
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Nombres"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarToolStripMenuItem, Me.GuardarCambiosToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 299)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(771, 29)
+        Me.MenuStrip1.TabIndex = 2
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'GuardarToolStripMenuItem
+        '
+        Me.GuardarToolStripMenuItem.BackColor = System.Drawing.Color.Gold
+        Me.GuardarToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
+        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(83, 25)
+        Me.GuardarToolStripMenuItem.Text = "Guardar"
+        '
+        'GuardarCambiosToolStripMenuItem
+        '
+        Me.GuardarCambiosToolStripMenuItem.BackColor = System.Drawing.Color.Gold
+        Me.GuardarCambiosToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GuardarCambiosToolStripMenuItem.Name = "GuardarCambiosToolStripMenuItem"
+        Me.GuardarCambiosToolStripMenuItem.Size = New System.Drawing.Size(153, 25)
+        Me.GuardarCambiosToolStripMenuItem.Text = "Guardar Cambios"
+        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.PictureBox1)
@@ -232,41 +281,17 @@ Partial Class usuariosok
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Gold
-        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarToolStripMenuItem, Me.GuardarCambiosToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(89, 185)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(180, 24)
-        Me.MenuStrip1.TabIndex = 2
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'GuardarToolStripMenuItem
-        '
-        Me.GuardarToolStripMenuItem.BackColor = System.Drawing.Color.White
-        Me.GuardarToolStripMenuItem.Name = "GuardarToolStripMenuItem"
-        Me.GuardarToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-        Me.GuardarToolStripMenuItem.Text = "Guardar"
-        '
-        'GuardarCambiosToolStripMenuItem
-        '
-        Me.GuardarCambiosToolStripMenuItem.Name = "GuardarCambiosToolStripMenuItem"
-        Me.GuardarCambiosToolStripMenuItem.Size = New System.Drawing.Size(111, 20)
-        Me.GuardarCambiosToolStripMenuItem.Text = "Guardar Cambios"
-        '
         'usuariosok
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1149, 505)
-        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.datalistado)
+        Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.datalistado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "usuariosok"
@@ -280,10 +305,10 @@ Partial Class usuariosok
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -293,12 +318,12 @@ Partial Class usuariosok
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents MenuStrip2 As System.Windows.Forms.MenuStrip
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents txtBusca As System.Windows.Forms.TextBox
+    Friend WithEvents txtBuscar As System.Windows.Forms.TextBox
     Friend WithEvents datalistado As System.Windows.Forms.DataGridView
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
+    Friend WithEvents txtLogin As System.Windows.Forms.TextBox
+    Friend WithEvents txtNOMBRE As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -308,4 +333,6 @@ Partial Class usuariosok
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents GuardarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GuardarCambiosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents lblIdusuario As System.Windows.Forms.Label
+    Friend WithEvents Eli As System.Windows.Forms.DataGridViewImageColumn
 End Class
