@@ -23,7 +23,6 @@ Partial Class login
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtLogin = New System.Windows.Forms.TextBox()
@@ -32,20 +31,11 @@ Partial Class login
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.datalistado = New System.Windows.Forms.DataGridView()
+        Me.Eli = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(473, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(40, 36)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -127,12 +117,41 @@ Partial Class login
         Me.Button2.Text = "Iniciar Sesion"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Form1
+        'datalistado
+        '
+        Me.datalistado.AllowUserToAddRows = False
+        Me.datalistado.AllowUserToDeleteRows = False
+        Me.datalistado.AllowUserToResizeRows = False
+        Me.datalistado.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
+        Me.datalistado.EnableHeadersVisualStyles = False
+        Me.datalistado.Location = New System.Drawing.Point(12, 69)
+        Me.datalistado.Name = "datalistado"
+        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado.RowTemplate.ReadOnly = True
+        Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.datalistado.Size = New System.Drawing.Size(135, 172)
+        Me.datalistado.TabIndex = 9
+        '
+        'Eli
+        '
+        Me.Eli.HeaderText = ""
+        Me.Eli.Image = CType(resources.GetObject("Eli.Image"), System.Drawing.Image)
+        Me.Eli.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.Eli.Name = "Eli"
+        '
+        'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(516, 682)
+        Me.Controls.Add(Me.datalistado)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel2)
@@ -141,17 +160,16 @@ Partial Class login
         Me.Controls.Add(Me.txtLogin)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Name = "login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.datalistado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtLogin As System.Windows.Forms.TextBox
@@ -160,5 +178,7 @@ Partial Class login
     Friend WithEvents txtPassword As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents datalistado As System.Windows.Forms.DataGridView
+    Friend WithEvents Eli As System.Windows.Forms.DataGridViewImageColumn
 
 End Class

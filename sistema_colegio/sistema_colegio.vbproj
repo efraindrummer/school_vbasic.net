@@ -71,11 +71,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONEXION\CONEXIONMAESTRA.vb" />
-    <Compile Include="LOGIN.vb">
+    <Compile Include="CONEXION\Tamaño_automatico_de_datatable.vb" />
+    <Compile Include="MODULOS\LOGIN\LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LOGIN.Designer.vb">
+    <Compile Include="MODULOS\LOGIN\LOGIN.Designer.vb">
       <DependentUpon>LOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MENUPRINCIPAL\MENUPRINCIPALMATRICULAS.Designer.vb">
+      <DependentUpon>MENUPRINCIPALMATRICULAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MENUPRINCIPAL\MENUPRINCIPALMATRICULAS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -93,16 +100,19 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="usuariosok.Designer.vb">
+    <Compile Include="MODULOS\USUARIOS\usuariosok.Designer.vb">
       <DependentUpon>usuariosok.vb</DependentUpon>
     </Compile>
-    <Compile Include="usuariosok.vb">
+    <Compile Include="MODULOS\USUARIOS\usuariosok.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LOGIN.resx">
+    <EmbeddedResource Include="MODULOS\LOGIN\LOGIN.resx">
       <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MENUPRINCIPAL\MENUPRINCIPALMATRICULAS.resx">
+      <DependentUpon>MENUPRINCIPALMATRICULAS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -110,7 +120,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="usuariosok.resx">
+    <EmbeddedResource Include="MODULOS\USUARIOS\usuariosok.resx">
       <DependentUpon>usuariosok.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

@@ -9,3 +9,4 @@ C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_cole
 C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.pdb
 C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.login.resources
 C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.usuariosok.resources
+C:\Users\emy-domsa-tampico\Documents\VBPROJECTS.NET\sistema_colegio\sistema_colegio\obj\Debug\sistema_colegio.MENUPRINCIPALMATRICULAS.resources

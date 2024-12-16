@@ -140,12 +140,18 @@ Partial Class usuariosok
         Me.datalistado.AllowUserToDeleteRows = False
         Me.datalistado.AllowUserToResizeRows = False
         Me.datalistado.BackgroundColor = System.Drawing.Color.White
+        Me.datalistado.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.datalistado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.datalistado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.datalistado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eli})
         Me.datalistado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.datalistado.EnableHeadersVisualStyles = False
         Me.datalistado.Location = New System.Drawing.Point(0, 134)
         Me.datalistado.Name = "datalistado"
-        Me.datalistado.RowHeadersVisible = False
+        Me.datalistado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.datalistado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black
+        Me.datalistado.RowTemplate.ReadOnly = True
         Me.datalistado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.datalistado.Size = New System.Drawing.Size(968, 371)
         Me.datalistado.TabIndex = 3
